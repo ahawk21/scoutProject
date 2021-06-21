@@ -1,15 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { Modal } from '/components/Modal'
-// import Modal from 'react-modal'
-import React, { useState } from 'react'
-// import ViewSource from '../components/view-source'
-// import itemsButton from '../components/itemsButton'
-import { bgWrap, bgText } from '../styles/Home.module.css'
 import styled from 'styled-components'
-import { GlobalStyle } from '../globalStyles';
-
+import React, { useState } from 'react'
+import { Modal } from '/components/Modal'
+import { GlobalStyle } from '../globalStyles'
+import styles from '../styles/Home.module.css'
+import { bgWrap, bgText } from '../styles/Home.module.css'
 
 const Container = styled.div`
   display: flex;
@@ -38,7 +34,6 @@ export default function Home() {
 
   return (
     <div>
-    {/* <ViewSource pathname="pages/background.js" /> */}
     <div className={bgWrap}>
       <Image
         src="/images/scoutTemplate.png"
